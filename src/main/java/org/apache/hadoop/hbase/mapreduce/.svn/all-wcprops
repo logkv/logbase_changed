@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce
+END
+TableMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/TableMapper.java
+END
+MultiTableOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/MultiTableOutputFormat.java
+END
+TableSplit.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/TableSplit.java
+END
+GroupingTableMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/GroupingTableMapper.java
+END
+Driver.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/Driver.java
+END
+TableOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/TableOutputFormat.java
+END
+Import.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/Import.java
+END
+TableInputFormatBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/TableInputFormatBase.java
+END
+LoadIncrementalHFiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/LoadIncrementalHFiles.java
+END
+RowCounter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/RowCounter.java
+END
+TableRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/TableRecordReader.java
+END
+TableRecordReaderImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/TableRecordReaderImpl.java
+END
+PutSortReducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/PutSortReducer.java
+END
+TableReducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/TableReducer.java
+END
+KeyValueSortReducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/KeyValueSortReducer.java
+END
+IdentityTableReducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/IdentityTableReducer.java
+END
+HFileOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/HFileOutputFormat.java
+END
+SimpleTotalOrderPartitioner.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/SimpleTotalOrderPartitioner.java
+END
+HRegionPartitioner.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/HRegionPartitioner.java
+END
+TableOutputCommitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/TableOutputCommitter.java
+END
+CellCounter.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/CellCounter.java
+END
+CopyTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/CopyTable.java
+END
+TableMapReduceUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/TableMapReduceUtil.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/package-info.java
+END
+Export.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/Export.java
+END
+TableInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/TableInputFormat.java
+END
+ImportTsv.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/ImportTsv.java
+END
+IdentityTableMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/mapreduce/IdentityTableMapper.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/filter
+END
+TestPrefixFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/filter/TestPrefixFilter.java
+END
+TestDependentColumnFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/filter/TestDependentColumnFilter.java
+END
+TestFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/filter/TestFilter.java
+END
+TestColumnPaginationFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/filter/TestColumnPaginationFilter.java
+END
+TestPageFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/filter/TestPageFilter.java
+END
+TestSingleColumnValueFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/filter/TestSingleColumnValueFilter.java
+END
+TestFilterList.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/filter/TestFilterList.java
+END
+TestInclusiveStopFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/filter/TestInclusiveStopFilter.java
+END
+TestColumnPrefixFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/filter/TestColumnPrefixFilter.java
+END
+TestSingleColumnValueExcludeFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/filter/TestSingleColumnValueExcludeFilter.java
+END

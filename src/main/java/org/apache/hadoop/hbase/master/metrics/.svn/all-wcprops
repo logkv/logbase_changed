@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/master/metrics
+END
+MasterStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/master/metrics/MasterStatistics.java
+END
+MasterMetrics.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/master/metrics/MasterMetrics.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift
+END
+ThriftServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/ThriftServer.java
+END
+ThriftUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/ThriftUtilities.java
+END

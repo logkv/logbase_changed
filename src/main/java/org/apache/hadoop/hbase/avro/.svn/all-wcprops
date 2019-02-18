@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/avro
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/avro/package.html
+END
+AvroServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/avro/AvroServer.java
+END
+AvroUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/avro/AvroUtil.java
+END
+hbase.avpr
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/avro/hbase.avpr
+END
+hbase.genavro
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/avro/hbase.genavro
+END

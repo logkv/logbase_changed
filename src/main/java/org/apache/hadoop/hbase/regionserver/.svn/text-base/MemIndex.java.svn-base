@@ -1,0 +1,432 @@
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package org.apache.hadoop.hbase.regionserver;
+
+
+import java.io.IOException; 
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ConcurrentNavigableMap;
+import java.util.concurrent.ConcurrentSkipListMap;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory; 
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.hbase.KeyValue;
+import org.apache.hadoop.hbase.io.HeapSize;
+import org.apache.hadoop.hbase.regionserver.TimeRangeTracker;
+import org.apache.hadoop.hbase.regionserver.wal.LogEntryOffset;
+import org.apache.hadoop.hbase.util.ClassSize;
+import org.apache.hadoop.hbase.util.EnvironmentEdgeManager;
+import org.apache.hadoop.io.SequenceFile;
+
+public class MemIndex implements HeapSize{
+  private static final Log LOG = LogFactory.getLog(MemIndex.class);
+  private Store store;
+
+  final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+
+  public volatile ConcurrentNavigableMap<KeyValue.Key, LogEntryOffset> kvIndex;
+
+  // Snapshot of memIndex.  Made for flusher.
+  volatile ConcurrentNavigableMap<KeyValue.Key, LogEntryOffset> snapshot; 
+  
+  // Used to track own heapSize
+  final AtomicLong size;
+  // Used to track the up-to-date data size stored in the WAL
+  final AtomicLong dataSize;;					
+  
+  TimeRangeTracker timeRangeTracker;				// TODO: this two various is useless now
+  TimeRangeTracker snapshotTimeRangeTracker;
+
+  public final static long FIXED_OVERHEAD = ClassSize.align(
+      ClassSize.OBJECT + (9 * ClassSize.REFERENCE));
+
+  public final static long DEEP_OVERHEAD = ClassSize.align(FIXED_OVERHEAD +
+      ClassSize.REENTRANT_LOCK + (2 * ClassSize.ATOMIC_LONG) +
+      ClassSize.COPYONWRITE_ARRAYSET + ClassSize.COPYONWRITE_ARRAYLIST +
+      (2 * ClassSize.CONCURRENT_SKIPLISTMAP));
+
+  /**
+   * Constructor.
+   * @param c Comparator
+   */
+  public MemIndex(Store store) throws IOException {
+    this.store = store;
+    this.kvIndex = new ConcurrentSkipListMap<KeyValue.Key, LogEntryOffset>();
+    this.snapshot = new ConcurrentSkipListMap<KeyValue.Key, LogEntryOffset>();
+    timeRangeTracker = new TimeRangeTracker();
+    snapshotTimeRangeTracker = new TimeRangeTracker();
+    this.size = new AtomicLong(DEEP_OVERHEAD);
+    this.dataSize = new AtomicLong(0);
+    loadIndex();
+  }
+
+  void loadIndex()throws IOException{
+  	FileSystem fs = store.fs;
+  	if(!fs.exists(store.indexPath)){
+  		LOG.info("The index file " + store.indexPath + " doesn't exist in store: " + store + ", no load is required");
+  		return;
+  	}
+  	SequenceFile.Reader reader = new SequenceFile.Reader(store.fs, store.indexPath, store.conf);
+  	do{
+  		KeyValue.Key key = new KeyValue.Key();
+  		LogEntryOffset value = new LogEntryOffset();
+  		if(reader.next(key, value) == false) break;
+  		this.kvIndex.put(key, value);
+  		dataSize.addAndGet(value.getSize());
+  	}while(true);
+  }
+  
+  public int getEntriesNum(){
+    return kvIndex.size();
+  }
+  /**
+   * The lock should be in outside
+   * @throws IOException
+   */
+  void dump() throws IOException{
+    Path tmpPath = getRandomPath();
+    LOG.info("dumping the index for store " + store); 
+    LOG.debug("... \ntmp index is " + tmpPath);
+    Configuration conf = store.conf;
+    FileSystem fs = store.fs;
+    // dump the file to the tmpPath
+    SequenceFile.Writer writer = new SequenceFile.Writer(fs, conf,
+        tmpPath, KeyValue.Key.class, LogEntryOffset.class);
+    Set<Map.Entry<KeyValue.Key, LogEntryOffset>> set = kvIndex.entrySet();
+    for(Map.Entry<KeyValue.Key, LogEntryOffset> pair : set){
+      writer.append(pair.getKey(), pair.getValue());
+    }
+    writer.close();
+    
+    //rename the file
+    if(fs.exists(store.indexPath)) fs.delete(store.indexPath, true);
+    LOG.debug("move " + tmpPath + " to " + store.indexPath);               
+    fs.rename(tmpPath, store.indexPath);
+  }
+ 
+  private Path getRandomPath(){
+    long now = EnvironmentEdgeManager.currentTimeMillis();
+    return new Path(store.indexPath.toString() + ".tmp." + now); 
+  }
+
+  /**
+   * Creates a snapshot of the current memstore.
+   * Snapshot must be cleared by call to {@link #clearSnapshot(SortedSet<KeyValue>)}
+   * To get the snapshot made by this method, use {@link #getSnapshot()}
+   */
+  void snapshot() {
+    this.lock.writeLock().lock();
+    try {
+      // If snapshot currently has entries, then flusher failed or didn't call
+      // cleanup.  Log a warning.
+      if (!this.snapshot.isEmpty()) {
+        LOG.warn("Snapshot called again without clearing previous. " +
+          "Doing nothing. Another ongoing flush or did we fail last attempt?");
+      } else {
+        if (!this.kvIndex.isEmpty()) {
+          this.snapshot = this.kvIndex;
+          this.kvIndex = new ConcurrentSkipListMap<KeyValue.Key, LogEntryOffset>();
+          this.snapshotTimeRangeTracker = this.timeRangeTracker;
+          this.timeRangeTracker = new TimeRangeTracker();
+          // Reset heap to not include any keys
+          this.size.set(DEEP_OVERHEAD);
+        }
+      }
+    } finally {
+      this.lock.writeLock().unlock();
+    }
+  }
+  
+  // TODO: Here has a problem, it should split by a split key
+	public void splitInto(MemIndex a, MemIndex b) throws IOException {
+//		TODO: split by a key, rather like this
+		this.lock.writeLock().lock();
+		int nEntries = kvIndex.size();
+		int n1 = nEntries / 2;
+		Set<Map.Entry<KeyValue.Key, LogEntryOffset>> set = kvIndex.entrySet();
+		Iterator<Map.Entry<KeyValue.Key, LogEntryOffset>> iter = set.iterator();
+		for (int i = 0; i < n1; i++) {
+			Map.Entry<KeyValue.Key, LogEntryOffset> entry = iter.next();
+			a.add(entry.getKey(), entry.getValue());
+		}
+
+		while (iter.hasNext()) {
+			Map.Entry<KeyValue.Key, LogEntryOffset> entry = iter.next();
+			b.add(entry.getKey(), entry.getValue());
+		}
+
+		this.lock.writeLock().unlock();
+		throw new IOException("not finished yet");
+  }
+
+
+//  ArrayList<byte[]> indexedLogName = new ArrayList<byte[]>(4);
+//  public void addIndexedLog(byte[] logName){
+//    indexedLogName.add(logName);
+//  }
+//  
+//  public byte[] getIndexedLogFileName(long val){
+//    int logFileID = (int)(val >> 29);    //save 8 log file at most
+//    return indexedLogName.get(logFileID); 
+//  }
+//  
+//  public long getIndexedLogFileOffset(long val){
+//    return val & 0x1FFFFFFF;
+//  }
+  
+  /**
+   * Return the current snapshot.
+   * Called by flusher to get current snapshot made by a previous
+   * call to {@link #snapshot()}
+   * @return Return snapshot.
+   * @see {@link #snapshot()}
+   * @see {@link #clearSnapshot(SortedSet<KeyValue>)}
+   */
+  ConcurrentNavigableMap<KeyValue.Key, LogEntryOffset> getSnapshot() {
+    return this.snapshot;
+  }
+
+//  /**
+//   * The passed snapshot was successfully persisted; it can be let go.
+//   * @param ss The snapshot to clean out.
+//   * @throws UnexpectedException
+//   * @see {@link #snapshot()}
+//   */
+//  void clearSnapshot(final SortedSet<KVPair> ss)
+//  throws UnexpectedException {
+//    this.lock.writeLock().lock();
+//    try {
+//      if (this.snapshot != ss) {
+//        throw new UnexpectedException("Current snapshot is " +
+//          this.snapshot + ", was passed " + ss);
+//      }
+//      // OK. Passed in snapshot is same as current snapshot.  If not-empty,
+//      // create a new snapshot and let the old one go.
+//      if (!ss.isEmpty()) {
+//        this.snapshot = new ConcurrentSkipListMap<byte[], LogEntryOffset>();
+//        this.snapshotTimeRangeTracker = new TimeRangeTracker();
+//      }
+//    } finally {
+//      this.lock.writeLock().unlock();
+//    }
+//  }
+
+  /**
+   * Write an update
+   * @param key
+   * @return approximate size of the passed key and value.
+   */
+  public long add(final KeyValue.Key key, LogEntryOffset offset) {
+    long s = -1;
+    this.lock.readLock().lock();
+    try { 
+      s = heapSizeChange(key, this.kvIndex.put(key, offset) == null);
+//      timeRangeTracker.includeTimestamp(key);   //TODO: to recover
+      this.size.addAndGet(s);
+      this.dataSize.addAndGet(offset.getSize());
+    } finally {
+      this.lock.readLock().unlock();
+    }
+    return s;
+  }
+  
+  // TODO: make sure that if it needs the readLock() here
+  public LogEntryOffset getOffset(KeyValue.Key key){
+    this.lock.readLock().lock();
+    try{
+      return kvIndex.get(key);
+    }finally{
+      this.lock.readLock().unlock();
+    }
+  }
+  
+  /**
+   * Write a delete
+   * @param delete
+   * @return approximate size of the passed key and value.
+   */
+  long delete(final KeyValue delete, LogEntryOffset offset) {
+    long s = 0;
+    this.lock.readLock().lock();
+    try {
+    	LogEntryOffset previousOffset = this.kvIndex.put(delete.getKeyForLog(), offset);
+      s += heapSizeChange(delete.getKeyForLog(), previousOffset == null);
+      this.dataSize.addAndGet(-1 * previousOffset.getSize());
+      
+//      timeRangeTracker.includeTimestamp(delete);        //TODO: to recover
+    } finally {
+      this.lock.readLock().unlock();
+    }
+    this.size.addAndGet(s);
+    return s;
+  }
+  
+  //TODO: to recover
+//  /**
+//   * @param kv Find the row that comes after this one.  If null, we return the
+//   * first.
+//   * @return Next row or null if none found.
+//   */
+//  KVPair getNextRow(final KVPair kv) {
+//    this.lock.readLock().lock();
+//    try {
+//      return getLowest(getNextRow(kv, this.kvIndex.keySet()), getNextRow(kv, this.snapshot.keySet()));
+//    } finally {
+//      this.lock.readLock().unlock();
+//    }
+//  }
+
+  //TODO: to recover
+//  /*
+//   * @param a
+//   * @param b
+//   * @return Return lowest of a or b or null if both a and b are null
+//   */
+//  private KVPair getLowest(final KVPair a, final KVPair b) {
+//    if (a == null) {
+//      return b;
+//    }
+//    if (b == null) {
+//      return a;
+//    }
+//    return comparator.compareRows(a, b) <= 0? a: b;
+//  }
+
+  /*
+   * @param key Find row that follows this one.  If null, return first.
+   * @param map Set to look in for a row beyond <code>row</code>.
+   * @return Next row or null if none found.  If one found, will be a new
+   * KeyValue -- can be destroyed by subsequent calls to this method.
+   */
+  //TODO: to recover
+//  private KVPair getNextRow(final byte[] key,
+//      final NavigableMap<byte[], LogEntryOffset> map) {
+//    KVPair result = null;
+//    SortedSet<Map.Entry<byte[], LogEntryOffset>> tail = key == null? map: map.tailSet(key);
+//    // Iterate until we fall into the next row; i.e. move off current row
+//    for (KVPair kv: tail) {
+//      if (comparator.compareRows(kv, key) <= 0)
+//        continue;
+//      // Note: Not suppressing deletes or expired cells.  Needs to be handled
+//      // by higher up functions.
+//      result = kv;
+//      break;
+//    }
+//    return result;
+//  }
+
+//  /**
+//   * @param state column/delete tracking state
+//   * TODO
+//   */
+//  void getRowKeyAtOrBefore(final GetClosestRowBeforeTracker state) {
+//    this.lock.readLock().lock();
+//    try {
+//      getRowKeyAtOrBefore(kvIndex.keySet(), state);
+//      getRowKeyAtOrBefore(snapshot.keySet(), state);
+//    } finally {
+//      this.lock.readLock().unlock();
+//    }
+//  }
+
+//  /*
+//   * @param set
+//   * @param state Accumulates deletes and candidates.
+//   */
+//  private void getRowKeyAtOrBefore(final NavigableSet<KeyValue> set,
+//      final GetClosestRowBeforeTracker state) {
+//    if (set.isEmpty()) {
+//      return;
+//    }
+//    if (!walkForwardInSingleRow(set, state.getTargetKey(), state)) {
+//      // Found nothing in row.  Try backing up.
+//      getRowKeyBefore(set, state);
+//    }
+//  }
+
+
+  /*
+   * Walk forward in a row from <code>firstOnRow</code>.  Presumption is that
+   * we have been passed the first possible key on a row.  As we walk forward
+   * we accumulate deletes until we hit a candidate on the row at which point
+   * we return.
+   * @param set
+   * @param firstOnRow First possible key on this row.
+   * @param state
+   * @return True if we found a candidate walking this row.
+   */
+  //TODO: to recover
+//  private boolean walkForwardInSingleRow(final SortedSet<KVPair> set,
+//      final KVPair firstOnRow, final GetClosestRowBeforeTracker state) {
+//    boolean foundCandidate = false;
+//    SortedSet<KVPair> tail = set.tailSet(firstOnRow);
+//    if (tail.isEmpty()) return foundCandidate;
+//    for (Iterator<KVPair> i = tail.iterator(); i.hasNext();) {
+//      KVPair kv = i.next();
+//      // Did we go beyond the target row? If so break.
+//      if (state.isTooFar(kv, firstOnRow)) break;
+//      if (state.isExpired(kv)) {
+//        i.remove();
+//        continue;
+//      }
+//      // If we added something, this row is a contender. break.
+//      if (state.handle(kv)) {
+//        foundCandidate = true;
+//        break;
+//      }
+//    }
+//    return foundCandidate;
+//  }
+
+  /*
+   * Calculate how the MemStore size has changed.  Includes overhead of the
+   * backing Map.
+   * @param kv
+   * @param notpresent True if the kv was NOT present in the set.
+   * @return Size
+   */
+  long heapSizeChange(final KeyValue.Key key, final boolean notpresent) {
+    return notpresent ?
+        ClassSize.align(ClassSize.CONCURRENT_SKIPLISTMAP_ENTRY + key.heapSize()):
+        0;
+  }
+
+  /**
+   * Get the entire heap usage for this MemStore not including keys in the
+   * snapshot.
+   */ 
+  public long heapSize() {
+    return size.get();
+  }
+
+  /**
+   * Get the heap usage of KVs in this MemStore.
+   */
+  public long keySize() {
+    return heapSize() - DEEP_OVERHEAD;
+  }
+  
+}

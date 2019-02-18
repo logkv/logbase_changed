@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/es2/!svn/ver/299/logbase_svn/src/main/java/sg/edu/nus/logbase/crindex
+END
+IntervalIndexIntervalTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/es2/!svn/ver/297/logbase_svn/src/main/java/sg/edu/nus/logbase/crindex/IntervalIndexIntervalTree.java
+END
+CRrecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/es2/!svn/ver/297/logbase_svn/src/main/java/sg/edu/nus/logbase/crindex/CRrecord.java
+END
+LogIndexInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/es2/!svn/ver/297/logbase_svn/src/main/java/sg/edu/nus/logbase/crindex/LogIndexInterface.java
+END
+LogIndexConfigurationSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/es2/!svn/ver/297/logbase_svn/src/main/java/sg/edu/nus/logbase/crindex/LogIndexConfigurationSet.java
+END
+LogIndexCRIndexSingleDimension.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/es2/!svn/ver/298/logbase_svn/src/main/java/sg/edu/nus/logbase/crindex/LogIndexCRIndexSingleDimension.java
+END
+LogIndexDebug.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/es2/!svn/ver/297/logbase_svn/src/main/java/sg/edu/nus/logbase/crindex/LogIndexDebug.java
+END
+CRlog.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/es2/!svn/ver/297/logbase_svn/src/main/java/sg/edu/nus/logbase/crindex/CRlog.java
+END
+LogIndexCRIndexSingleDimensionFullScan.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/es2/!svn/ver/299/logbase_svn/src/main/java/sg/edu/nus/logbase/crindex/LogIndexCRIndexSingleDimensionFullScan.java
+END
+IntervalIndexBtree.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/es2/!svn/ver/297/logbase_svn/src/main/java/sg/edu/nus/logbase/crindex/IntervalIndexBtree.java
+END

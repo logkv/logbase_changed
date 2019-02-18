@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/rest/protobuf/generated
+END
+ColumnSchemaMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/rest/protobuf/generated/ColumnSchemaMessage.java
+END
+VersionMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/rest/protobuf/generated/VersionMessage.java
+END
+TableInfoMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/rest/protobuf/generated/TableInfoMessage.java
+END
+TableListMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/rest/protobuf/generated/TableListMessage.java
+END
+ScannerMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/rest/protobuf/generated/ScannerMessage.java
+END
+TableSchemaMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/rest/protobuf/generated/TableSchemaMessage.java
+END
+CellSetMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/rest/protobuf/generated/CellSetMessage.java
+END
+StorageClusterStatusMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/rest/protobuf/generated/StorageClusterStatusMessage.java
+END
+CellMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/rest/protobuf/generated/CellMessage.java
+END

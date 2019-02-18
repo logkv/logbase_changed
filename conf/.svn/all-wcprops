@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/es2/!svn/ver/297/logbase_svn/conf
+END
+hbase-site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/es2/!svn/ver/297/logbase_svn/conf/hbase-site.xml
+END
+hadoop-metrics.properties
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/es2/!svn/ver/297/logbase_svn/conf/hadoop-metrics.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/es2/!svn/ver/297/logbase_svn/conf/log4j.properties
+END
+hbase-env.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/es2/!svn/ver/297/logbase_svn/conf/hbase-env.sh
+END
+regionservers
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/es2/!svn/ver/297/logbase_svn/conf/regionservers
+END

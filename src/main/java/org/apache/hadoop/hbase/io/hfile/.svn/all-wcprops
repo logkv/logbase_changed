@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/hfile
+END
+BoundedRangeFileInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/hfile/BoundedRangeFileInputStream.java
+END
+CachedBlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/hfile/CachedBlock.java
+END
+HFileScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/hfile/HFileScanner.java
+END
+SimpleBlockCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/hfile/SimpleBlockCache.java
+END
+Compression.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/hfile/Compression.java
+END
+CachedBlockQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/hfile/CachedBlockQueue.java
+END
+BlockCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/hfile/BlockCache.java
+END
+LruBlockCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/hfile/LruBlockCache.java
+END
+HFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java
+END

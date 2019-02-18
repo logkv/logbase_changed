@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io
+END
+TimeRange.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/TimeRange.java
+END
+CodeToClassAndBack.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/CodeToClassAndBack.java
+END
+HeapSize.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/HeapSize.java
+END
+HalfStoreFileReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/HalfStoreFileReader.java
+END
+Reference.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/Reference.java
+END
+ImmutableBytesWritable.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/ImmutableBytesWritable.java
+END
+HbaseObjectWritable.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/HbaseObjectWritable.java
+END
+WritableWithSize.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/WritableWithSize.java
+END
+HbaseMapWritable.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/io/HbaseMapWritable.java
+END

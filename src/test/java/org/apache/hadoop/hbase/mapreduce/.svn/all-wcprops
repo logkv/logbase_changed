@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/mapreduce
+END
+TestImportTsv.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/mapreduce/TestImportTsv.java
+END
+TestTableSplit.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/mapreduce/TestTableSplit.java
+END
+TestHFileOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/mapreduce/TestHFileOutputFormat.java
+END
+TestSimpleTotalOrderPartitioner.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/mapreduce/TestSimpleTotalOrderPartitioner.java
+END
+TestTableMapReduce.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/mapreduce/TestTableMapReduce.java
+END
+NMapInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/mapreduce/NMapInputFormat.java
+END
+TestTimeRangeMapRed.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/mapreduce/TestTimeRangeMapRed.java
+END
+TestTableInputFormatScan.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/mapreduce/TestTableInputFormatScan.java
+END
+TestLoadIncrementalHFiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/mapreduce/TestLoadIncrementalHFiles.java
+END

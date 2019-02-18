@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/replication
+END
+TestReplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/replication/TestReplication.java
+END
+TestReplicationSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/replication/TestReplicationSource.java
+END
+ReplicationSourceDummy.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/replication/ReplicationSourceDummy.java
+END

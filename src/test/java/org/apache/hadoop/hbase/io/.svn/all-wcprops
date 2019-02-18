@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/io
+END
+TestHeapSize.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/io/TestHeapSize.java
+END
+TestImmutableBytesWritable.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/io/TestImmutableBytesWritable.java
+END
+TestHalfStoreFileReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/io/TestHalfStoreFileReader.java
+END
+TestHbaseObjectWritable.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/io/TestHbaseObjectWritable.java
+END

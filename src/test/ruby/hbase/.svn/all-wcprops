@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/es2/!svn/ver/297/logbase_svn/src/test/ruby/hbase
+END
+hbase_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/es2/!svn/ver/297/logbase_svn/src/test/ruby/hbase/hbase_test.rb
+END
+table_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/es2/!svn/ver/297/logbase_svn/src/test/ruby/hbase/table_test.rb
+END
+admin_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/es2/!svn/ver/297/logbase_svn/src/test/ruby/hbase/admin_test.rb
+END

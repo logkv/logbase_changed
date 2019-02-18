@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/es2/!svn/ver/297/logbase_svn/src/test/ruby/shell
+END
+commands_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/es2/!svn/ver/297/logbase_svn/src/test/ruby/shell/commands_test.rb
+END
+formatter_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/es2/!svn/ver/297/logbase_svn/src/test/ruby/shell/formatter_test.rb
+END
+shell_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/es2/!svn/ver/297/logbase_svn/src/test/ruby/shell/shell_test.rb
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/generated
+END
+Mutation.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/generated/Mutation.java
+END
+Hbase.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/generated/Hbase.java
+END
+TCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/generated/TCell.java
+END
+TRegionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/generated/TRegionInfo.java
+END
+ColumnDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/generated/ColumnDescriptor.java
+END
+AlreadyExists.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/generated/AlreadyExists.java
+END
+BatchMutation.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/generated/BatchMutation.java
+END
+TRowResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/generated/TRowResult.java
+END
+IllegalArgument.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/generated/IllegalArgument.java
+END
+IOError.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/thrift/generated/IOError.java
+END

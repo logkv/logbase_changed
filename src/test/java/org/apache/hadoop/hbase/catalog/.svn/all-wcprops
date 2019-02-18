@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/catalog
+END
+TestCatalogTrackerOnCluster.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/catalog/TestCatalogTrackerOnCluster.java
+END
+TestMetaReaderEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/catalog/TestMetaReaderEditor.java
+END
+TestCatalogTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/catalog/TestCatalogTracker.java
+END

@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/es2/!svn/ver/297/logbase_svn/lib
+END
+jasper-runtime-5.5.23.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/es2/!svn/ver/297/logbase_svn/lib/jasper-runtime-5.5.23.jar
+END
+jetty-util-6.1.26.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/es2/!svn/ver/297/logbase_svn/lib/jetty-util-6.1.26.jar
+END
+jasper-compiler-5.5.23.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/es2/!svn/ver/297/logbase_svn/lib/jasper-compiler-5.5.23.jar
+END
+jsp-2.1-6.1.14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/es2/!svn/ver/297/logbase_svn/lib/jsp-2.1-6.1.14.jar
+END
+jackson-mapper-asl-1.4.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/es2/!svn/ver/297/logbase_svn/lib/jackson-mapper-asl-1.4.2.jar
+END
+jaxb-api-2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/es2/!svn/ver/297/logbase_svn/lib/jaxb-api-2.1.jar
+END
+jackson-xc-1.5.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/es2/!svn/ver/297/logbase_svn/lib/jackson-xc-1.5.5.jar
+END
+hadoop-0.20.2-test.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/es2/!svn/ver/297/logbase_svn/lib/hadoop-0.20.2-test.jar
+END
+jackson-jaxrs-1.5.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/es2/!svn/ver/297/logbase_svn/lib/jackson-jaxrs-1.5.5.jar
+END
+jaxb-impl-2.1.12.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/es2/!svn/ver/297/logbase_svn/lib/jaxb-impl-2.1.12.jar
+END
+commons-codec-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/es2/!svn/ver/297/logbase_svn/lib/commons-codec-1.4.jar
+END
+commons-lang-2.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/es2/!svn/ver/297/logbase_svn/lib/commons-lang-2.5.jar
+END
+avro-1.3.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/es2/!svn/ver/297/logbase_svn/lib/avro-1.3.3.jar
+END
+jsr311-api-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/es2/!svn/ver/297/logbase_svn/lib/jsr311-api-1.1.1.jar
+END
+mockito-all-1.8.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/es2/!svn/ver/297/logbase_svn/lib/mockito-all-1.8.4.jar
+END
+thrift-0.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/es2/!svn/ver/297/logbase_svn/lib/thrift-0.2.0.jar
+END
+commons-cli-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/es2/!svn/ver/297/logbase_svn/lib/commons-cli-1.2.jar
+END
+asm-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/es2/!svn/ver/297/logbase_svn/lib/asm-3.1.jar
+END
+commons-logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/es2/!svn/ver/297/logbase_svn/lib/commons-logging-1.1.1.jar
+END
+commons-net-1.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/es2/!svn/ver/297/logbase_svn/lib/commons-net-1.4.1.jar
+END
+slf4j-api-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/es2/!svn/ver/297/logbase_svn/lib/slf4j-api-1.5.8.jar
+END
+slf4j-log4j12-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/es2/!svn/ver/297/logbase_svn/lib/slf4j-log4j12-1.5.8.jar
+END
+servlet-api-2.5-6.1.14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/es2/!svn/ver/297/logbase_svn/lib/servlet-api-2.5-6.1.14.jar
+END
+jetty-6.1.26.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/es2/!svn/ver/297/logbase_svn/lib/jetty-6.1.26.jar
+END
+hadoop-core-0.20-append-r1056497.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/es2/!svn/ver/297/logbase_svn/lib/hadoop-core-0.20-append-r1056497.jar
+END
+jsp-api-2.1-6.1.14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/es2/!svn/ver/297/logbase_svn/lib/jsp-api-2.1-6.1.14.jar
+END
+jersey-server-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/es2/!svn/ver/297/logbase_svn/lib/jersey-server-1.4.jar
+END
+jettison-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/es2/!svn/ver/297/logbase_svn/lib/jettison-1.1.jar
+END
+log4j-1.2.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/es2/!svn/ver/297/logbase_svn/lib/log4j-1.2.16.jar
+END
+junit-4.9b3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/es2/!svn/ver/297/logbase_svn/lib/junit-4.9b3.jar
+END
+commons-math-2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/es2/!svn/ver/297/logbase_svn/lib/commons-math-2.2.jar
+END
+jackson-core-asl-1.5.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/es2/!svn/ver/297/logbase_svn/lib/jackson-core-asl-1.5.5.jar
+END
+zookeeper-3.3.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/es2/!svn/ver/297/logbase_svn/lib/zookeeper-3.3.2.jar
+END
+activation-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/es2/!svn/ver/297/logbase_svn/lib/activation-1.1.jar
+END
+commons-httpclient-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/es2/!svn/ver/297/logbase_svn/lib/commons-httpclient-3.1.jar
+END
+hadoop-gpl-compression-0.1.0-dev.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/es2/!svn/ver/297/logbase_svn/lib/hadoop-gpl-compression-0.1.0-dev.jar
+END
+xmlenc-0.52.jar
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/es2/!svn/ver/297/logbase_svn/lib/xmlenc-0.52.jar
+END
+jersey-core-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/es2/!svn/ver/297/logbase_svn/lib/jersey-core-1.4.jar
+END
+guava-r06.jar
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/es2/!svn/ver/297/logbase_svn/lib/guava-r06.jar
+END
+core-3.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/es2/!svn/ver/297/logbase_svn/lib/core-3.1.1.jar
+END
+stax-api-1.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/es2/!svn/ver/297/logbase_svn/lib/stax-api-1.0.1.jar
+END
+jersey-json-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/es2/!svn/ver/297/logbase_svn/lib/jersey-json-1.4.jar
+END
+protobuf-java-2.3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/es2/!svn/ver/297/logbase_svn/lib/protobuf-java-2.3.0.jar
+END
+jruby-complete-1.6.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/es2/!svn/ver/297/logbase_svn/lib/jruby-complete-1.6.0.jar
+END
+commons-el-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/es2/!svn/ver/297/logbase_svn/lib/commons-el-1.0.jar
+END

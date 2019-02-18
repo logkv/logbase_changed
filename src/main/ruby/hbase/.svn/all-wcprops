@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/es2/!svn/ver/297/logbase_svn/src/main/ruby/hbase
+END
+table.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/es2/!svn/ver/297/logbase_svn/src/main/ruby/hbase/table.rb
+END
+replication_admin.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/es2/!svn/ver/297/logbase_svn/src/main/ruby/hbase/replication_admin.rb
+END
+hbase.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/es2/!svn/ver/297/logbase_svn/src/main/ruby/hbase/hbase.rb
+END
+admin.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/es2/!svn/ver/297/logbase_svn/src/main/ruby/hbase/admin.rb
+END

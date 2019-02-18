@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands
+END
+list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/list.rb
+END
+enable_peer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/enable_peer.rb
+END
+scan.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/scan.rb
+END
+remove_peer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/remove_peer.rb
+END
+exists.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/exists.rb
+END
+split.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/split.rb
+END
+version.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/version.rb
+END
+balance_switch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/balance_switch.rb
+END
+deleteall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/deleteall.rb
+END
+balancer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/balancer.rb
+END
+shutdown.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/shutdown.rb
+END
+get.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/get.rb
+END
+alter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/alter.rb
+END
+incr.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/incr.rb
+END
+is_disabled.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/is_disabled.rb
+END
+assign.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/assign.rb
+END
+start_replication.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/start_replication.rb
+END
+drop.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/drop.rb
+END
+delete.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/delete.rb
+END
+unassign.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/unassign.rb
+END
+flush.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/flush.rb
+END
+compact.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/compact.rb
+END
+zk_dump.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/zk_dump.rb
+END
+add_peer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/add_peer.rb
+END
+major_compact.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/major_compact.rb
+END
+create.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/create.rb
+END
+close_region.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/close_region.rb
+END
+disable_peer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/disable_peer.rb
+END
+get_counter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/get_counter.rb
+END
+status.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/status.rb
+END
+move.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/move.rb
+END
+put.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/put.rb
+END
+stop_replication.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/stop_replication.rb
+END
+count.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/count.rb
+END
+is_enabled.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/is_enabled.rb
+END
+describe.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/describe.rb
+END
+disable.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/disable.rb
+END
+truncate.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/truncate.rb
+END
+enable.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/es2/!svn/ver/297/logbase_svn/lib/ruby/shell/commands/enable.rb
+END

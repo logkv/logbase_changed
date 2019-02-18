@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc
+END
+ServerNotRunningException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/ServerNotRunningException.java
+END
+HBaseRPCStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/HBaseRPCStatistics.java
+END
+HMasterInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/HMasterInterface.java
+END
+HBaseRPCErrorHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/HBaseRPCErrorHandler.java
+END
+HRegionInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java
+END
+HBaseRPC.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/HBaseRPC.java
+END
+HBaseServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/HBaseServer.java
+END
+HMasterRegionInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/HMasterRegionInterface.java
+END
+ByteBufferOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/ByteBufferOutputStream.java
+END
+HBaseRpcMetrics.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/HBaseRpcMetrics.java
+END
+HBaseRPCProtocolVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/HBaseRPCProtocolVersion.java
+END
+HBaseClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/ipc/HBaseClient.java
+END

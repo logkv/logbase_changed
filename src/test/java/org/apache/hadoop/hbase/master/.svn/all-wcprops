@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master
+END
+TestLoadBalancer.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestLoadBalancer.java
+END
+TestMasterRestartAfterDisablingTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestMasterRestartAfterDisablingTable.java
+END
+TestMasterTransitions.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestMasterTransitions.java
+END
+TestMasterFailover.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestMasterFailover.java
+END
+TestHMasterRPCException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestHMasterRPCException.java
+END
+TestClockSkewDetection.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestClockSkewDetection.java
+END
+TestCatalogJanitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestCatalogJanitor.java
+END
+TestRestartCluster.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestRestartCluster.java
+END
+TestRollingRestart.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestRollingRestart.java
+END
+BROKE_FIX_TestKillingServersFromMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/BROKE_FIX_TestKillingServersFromMaster.java
+END
+TestDeadServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestDeadServer.java
+END
+TestLogsCleaner.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestLogsCleaner.java
+END
+TestMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestMaster.java
+END
+TestActiveMasterManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestActiveMasterManager.java
+END
+TestZKBasedOpenCloseRegion.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/TestZKBasedOpenCloseRegion.java
+END
+OOMEHMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/master/OOMEHMaster.java
+END

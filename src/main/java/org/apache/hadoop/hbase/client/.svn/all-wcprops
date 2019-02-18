@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/es2/!svn/ver/299/logbase_svn/src/main/java/org/apache/hadoop/hbase/client
+END
+Put.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/Put.java
+END
+MultiAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/MultiAction.java
+END
+RetriesExhaustedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/RetriesExhaustedException.java
+END
+HConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/es2/!svn/ver/299/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/HConnection.java
+END
+HTableFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/HTableFactory.java
+END
+UnmodifyableHTableDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/UnmodifyableHTableDescriptor.java
+END
+Scan.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/es2/!svn/ver/301/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/Scan.java
+END
+Row.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/Row.java
+END
+MultiResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/MultiResponse.java
+END
+MetaScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/MetaScanner.java
+END
+MultiPutResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/MultiPutResponse.java
+END
+HTableInterfaceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/HTableInterfaceFactory.java
+END
+Get.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/Get.java
+END
+RetriesExhaustedWithDetailsException.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/RetriesExhaustedWithDetailsException.java
+END
+ScannerCallable.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/299/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/ScannerCallable.java
+END
+MultiPut.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/MultiPut.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/package-info.java
+END
+Increment.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/Increment.java
+END
+ScannerTimeoutException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/ScannerTimeoutException.java
+END
+Delete.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/Delete.java
+END
+HConnectionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/es2/!svn/ver/299/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java
+END
+HTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/es2/!svn/ver/299/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/HTable.java
+END
+RowLock.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/RowLock.java
+END
+HTablePool.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/HTablePool.java
+END
+ResultScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/ResultScanner.java
+END
+UnmodifyableHColumnDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/UnmodifyableHColumnDescriptor.java
+END
+RegionOfflineException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/RegionOfflineException.java
+END
+Result.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/Result.java
+END
+UnmodifyableHRegionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/UnmodifyableHRegionInfo.java
+END
+ServerCallable.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/ServerCallable.java
+END
+HBaseAdmin.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/HBaseAdmin.java
+END
+Action.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/Action.java
+END
+NoServerForRegionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/NoServerForRegionException.java
+END
+HTableInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/es2/!svn/ver/297/logbase_svn/src/main/java/org/apache/hadoop/hbase/client/HTableInterface.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/replication/regionserver
+END
+TestReplicationSink.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/replication/regionserver/TestReplicationSink.java
+END
+TestReplicationSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/replication/regionserver/TestReplicationSourceManager.java
+END

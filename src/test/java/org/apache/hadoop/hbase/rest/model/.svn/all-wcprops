@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model
+END
+TestColumnSchemaModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java
+END
+TestTableInfoModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestTableInfoModel.java
+END
+TestTableListModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestTableListModel.java
+END
+TestScannerModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestScannerModel.java
+END
+TestTableSchemaModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestTableSchemaModel.java
+END
+TestCellSetModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestCellSetModel.java
+END
+TestTableRegionModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestTableRegionModel.java
+END
+TestStorageClusterStatusModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestStorageClusterStatusModel.java
+END
+TestCellModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestCellModel.java
+END
+TestVersionModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestVersionModel.java
+END
+TestStorageClusterVersionModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestStorageClusterVersionModel.java
+END
+TestRowModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/es2/!svn/ver/297/logbase_svn/src/test/java/org/apache/hadoop/hbase/rest/model/TestRowModel.java
+END
